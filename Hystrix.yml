@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Hystrix
+eureka:
+  client:
+    register-with-eureka: false
+server:
+  port: 8085
+turbine:
+  aggregator:
+    clusterConfig: ACHAT,ADMIN,MAINTENANCE,STOCK
+  app-config: achat,admin,maintenance,stock
